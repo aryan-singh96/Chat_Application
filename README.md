@@ -1,248 +1,147 @@
-# 🚀 Real-Time Chat Application (MERN Stack)
+# 💬 Realtime Chat Application (MERN Stack)
 
-<p align="center">
-  <b>Visitor Count</b><br>
-  <img src="https://profile-counter.glitch.me/chat-app/count.svg" />
-</p>
+A full-stack **Realtime Chat Application** built using the **MERN Stack (MongoDB, Express.js, React.js, Node.js)**. This app allows users to communicate instantly with a modern UI and real-time messaging features.
 
 ---
 
-## 🌐 Live Demo
+## 🚀 Features
 
-🔗 https://chat-application-jack.vercel.app/
-
----
-
-## 📌 Project Overview
-
-A real-time **Chat Application** built using the **MERN Stack (MongoDB, Express, React, Node.js)** with modern UI powered by **Tailwind CSS**.
-
-This application enables users to communicate instantly through private and group chats with real-time updates using **Socket.IO**. It also includes authentication, notifications, and efficient state management using Redux.
+* 🔐 User Authentication (Login / Signup)
+* 💬 Real-time Messaging
+* 🟢 Online/Offline User Status
+* 📁 Media/File Sharing *(if implemented)*
+* ⚡ Fast & Responsive UI
+* 🔔 Notifications *(optional)*
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠️ Tech Stack
 
-- **MongoDB** – NoSQL database
-- **Express.js** – Backend framework
-- **Node.js** – Server runtime
-- **React.js** – Frontend library
-- **Tailwind CSS** – Styling
-- **Socket.IO** – Real-time communication
-- **JWT (JSON Web Token)** – Authentication
-- **Redux** – State management
-- **React-Toastify** – Notifications
+**Frontend:**
 
----
+* React.js
+* CSS / Tailwind (if used)
 
-## ✨ Key Features
+**Backend:**
 
-- 🔐 User Authentication (Login / Signup / Logout)
-- 💬 Real-time messaging
-- 👥 Group chat functionality
-- 🔔 Notifications with alerts
-- ⚡ Fast and responsive UI
-- 🧠 Centralized state management using Redux
+* Node.js
+* Express.js
+
+**Database:**
+
+* MongoDB
+
+**Other Tools:**
+
+* Socket.io (for real-time communication)
+* JWT (Authentication)
 
 ---
 
-## 🔑 Demo Credentials
+## 📂 Project Structure
 
-Use this to test the app:
-
-Email: [testuser@gmail.com](mailto:testuser@gmail.com)
-Password: 123456
+```
+Chat_App/
+│── backend/
+│   ├── models/
+│   ├── routes/
+│   ├── controllers/
+│   └── server.js
+│
+│── frontend/
+│   ├── src/
+│   └── public/
+│
+└── README.md
+```
 
 ---
 
-## ⚙️ Installation Guide
+## ⚙️ Installation & Setup
 
-### 1. Clone Repository
+### 1️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/akashdeep023/Chat_App.git
+git clone https://github.com/aryan-singh96/Chat_App.git
 cd Chat_App
 ```
 
 ---
 
-### 2. Install Dependencies
+### 2️⃣ Install dependencies
 
-#### Frontend
-
-```bash
-cd frontend
-npm install
-```
-
-#### Backend
+**Backend:**
 
 ```bash
 cd backend
 npm install
 ```
 
----
-
-### 3. Environment Variables
-
-Create `.env` file in both folders
-
-#### Frontend (.env)
+**Frontend:**
 
 ```bash
-VITE_BACKEND_URL=http://localhost:9000
+cd frontend
+npm install
 ```
 
-#### Backend (.env)
+---
 
-```bash
-FRONTEND_URL=http://localhost:5173
-MONGODB_URI=mongodb://127.0.0.1:27017/chat-app
-PORT=9000
+### 3️⃣ Setup Environment Variables
+
+Create a `.env` file in backend folder and add:
+
+```
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
 ```
 
 ---
 
-### 4. Run Project
+### 4️⃣ Run the project
 
-#### Frontend
-
-```bash
-npm run dev
-```
-
-#### Backend
+**Backend:**
 
 ```bash
-npm run dev
+npm start
+```
+
+**Frontend:**
+
+```bash
+npm start
 ```
 
 ---
 
-### 5. Open in Browser
+## 🌐 Live Demo
 
-```
-http://localhost:5173
-```
+*(Add your deployed link here)*
 
 ---
 
-## 📁 Project Structure
+## 📸 Screenshots
 
-```
-├── frontend
-│   ├── src
-│   ├── components
-│   ├── pages
-│   ├── redux
-│   ├── socket
-│   └── utils
-│
-├── backend
-│   ├── controllers
-│   ├── models
-│   ├── routes
-│   ├── middlewares
-│   └── config
-```
-
----
-
-## 🔗 API Endpoints
-
-### Auth Routes
-
-- POST /api/auth/signup
-- POST /api/auth/login
-
-### Chat Routes
-
-- GET /api/chat
-- POST /api/chat
-
-### Message Routes
-
-- GET /api/message/:chatId
-- POST /api/message
-
----
-
-## 🏗️ Architecture
-
-```
-Frontend (React)
-       ↓
-Backend (Node + Express)
-       ↓
-MongoDB Database
-
-↔ Real-time communication using Socket.IO
-```
-
----
-
-## 🔒 Security Features
-
-- Password hashing (bcrypt)
-- JWT authentication
-- Protected routes
-- Environment variable protection
-
----
-
-## ⚡ Performance Optimization
-
-- Optimized API calls
-- Efficient Redux state updates
-- Lazy loading components
-
----
-
-## 🚀 Future Enhancements
-
-- 📞 Video/Audio Calling
-- 📎 File & Image Sharing
-- 🌙 Dark Mode
-- 👀 Seen/Delivered Status
-- ⌨️ Typing Indicator
-
----
-
-## 🐞 Known Issues
-
-- Socket reconnect issue sometimes
-- Notification delay on slow networks
-
----
-
-## 🎯 Why This Project?
-
-This project demonstrates:
-
-- Real-time communication
-- Full-stack development skills
-- Scalable architecture design
-- Modern UI/UX practices
-
----
-
-## 🏆 Highlights
-
-- Real-time chat with Socket.IO
-- Fully responsive UI
-- Clean and scalable code structure
+*(Add screenshots of your project here)*
 
 ---
 
 ## 👨‍💻 Author
 
-**Aryan Singh Chauhan**
+**Aryan Singh**
+
+* GitHub: https://github.com/aryan-singh96
 
 ---
 
-## 🙌 Thank You
+## ⭐ Support
 
-Thanks for checking out this project!
-If you like it, feel free to ⭐ the repository and share your feedback 😊
+If you like this project, please give it a ⭐ on GitHub!
+
+---
+
+## 📌 Note
+
+This project is created for learning and development purposes. Feel free to use and enhance it.
+
+---
